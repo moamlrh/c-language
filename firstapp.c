@@ -1,13 +1,18 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
-#include <sys/socket.h>
+#include <stdio.h>
 
-void main(void){
-    double x = sqrt(2.0);
-    printf("x is = %f", x);
-    for (int i = 0; i < 10; i++)
+void main()
+{
+    int num;
+    printf("Enter your number : ");
+    scanf("%d", &num);
+    if(num > 2){
+        printf("Your number is %d greated than 2, Your suck !\n", num);
+    }else if (num < 2)
     {
-        printf("\ni is = %d\n", i);
+        printf("Your number is %d lesser then 2, Your not suck !\n", num);
+    }
+    else { 
+        printf("Your number is %d and it's equal to itself I mean it equal to 2 !\n", num);
     }
 }
