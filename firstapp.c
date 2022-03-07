@@ -1,18 +1,15 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-void main()
+void main(void)
 {
-    int num;
-    printf("Enter your number : ");
-    scanf("%d", &num);
-    if(num > 2){
-        printf("Your number is %d greated than 2, Your suck !\n", num);
-    }else if (num < 2)
+    int i; 
+    printf("Enter number to loop :");
+    scanf("%d",&i);
+    while (i >= 0)
     {
-        printf("Your number is %d lesser then 2, Your not suck !\n", num);
+        printf("\t\tYour %d Loop\n", i);
+        i--;
     }
-    else { 
-        printf("Your number is %d and it's equal to itself I mean it equal to 2 !\n", num);
-    }
+    
 }
