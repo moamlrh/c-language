@@ -1,15 +1,20 @@
 #include <stdio.h>
+#include <string.h>
 #include <stdlib.h>
 
-void main(void)
+int main(void)
 {
-    int i; 
-    printf("Enter number to loop :");
-    scanf("%d",&i);
-    while (i >= 0)
-    {
-        printf("\t\tYour %d Loop\n", i);
-        i--;
-    }
-    
+    char arr[] = {'a', 'b', 'c'};
+    printf("%c ", arr[1]);
+    char *name = "My name is moaml riad hussein !";
+    printf(name);
+
+
+
+    printf("\n\t\r");
+    printf("%lu",sizeof(arr));
+
+    printf("\n\t\r");
+
+    return 0;
 }
