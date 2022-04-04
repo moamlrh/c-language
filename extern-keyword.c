@@ -1,3 +1,10 @@
+/*
+    Let's say you have two .c-files test1.c and test2.c. 
+    If you define a global variable int test1_var; in test1.c 
+    and you'd like to access this variable in test2.c 
+    you have to use extern int test1_var; in test2.c.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "firstapp.h"
