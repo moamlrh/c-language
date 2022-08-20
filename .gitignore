@@ -1,3 +1,5 @@
 .vscode
 firstapp.c
 a.out
+*.o
+*.out
